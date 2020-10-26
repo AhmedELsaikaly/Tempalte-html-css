@@ -366,6 +366,9 @@ ul {
   float: left;
   width: 25%;
 }
+.footer .col {
+  padding: 5px;
+}
 
 .footer .col h2 {
   color: rgb(225, 225, 225);
