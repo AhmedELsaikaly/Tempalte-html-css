@@ -36,6 +36,41 @@ $(function () {
       pager: false,
     });
   });
+  // prettier-ignore
+
+  // our auto slider function
+  (function autoSlider() {
+    $(".slider .active").each(function () {
+      if (!$(this).is(":last-child")) {
+        $(this)
+          .delay(3000)
+          .fadeOut(1000, function () {
+            $(this).removeClass("active").next().addClass("active").fadeIn();
+            autoSlider();
+          });
+      }else {
+        $(this)
+          .delay(3000)
+          .fadeOut(1000, function () {
+            $(this).removeClass("active");
+            $(".slider div").eq(0).addClass("active").fadeIn();
+            autoSlider();
+          });
+
+      } 
+    });
+  }());
+  // Adjust shuffle link
+  $(".shuffle li").click(function () {
+    $(this).addClass("selected").siblings().removeClass("selected");
+  });
+
+  // nice scroll
+  $("html").niceScroll({
+    cursorcolor: "rgb(73, 201, 176)",
+    cursorwidth: "8px",
+    cursorborder: "1px solid rgb(73, 201, 176)",
+  });
 });
 
 // smooth scroll

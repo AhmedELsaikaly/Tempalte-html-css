@@ -6,8 +6,8 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-.container {
-  width: 1200px;
+.screen {
+  width: 1170px;
   margin: 0 auto;
 }
 ul {
@@ -229,3 +229,195 @@ ul {
 }
 
 /* end our team*/
+
+/* start testomnials */
+
+.testim {
+  height: 400px;
+  background-image: url("../images/keyboard.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  text-align: center;
+  padding: 80px 0;
+}
+.testim .t-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  z-index: 1;
+}
+
+.testim h2 {
+  margin-top: 80px;
+  font-size: 40px;
+}
+.testim blockquote {
+  line-height: 1.6;
+  font-size: 20px;
+  color: #cfcccc;
+  padding: 40px 0 30px 0;
+}
+
+.testim span {
+  color: rgb(73, 201, 176);
+  font-size: 20px;
+}
+
+.testim .slider > div {
+  display: none;
+}
+
+.testim .slider .active {
+  display: block;
+}
+/* end testimonials */
+
+/* Start our projects */
+.our-projects {
+  padding: 60px 0;
+}
+
+.our-projects h2 {
+  font-weight: bold;
+}
+.our-projects ul {
+  margin-top: 40px;
+}
+.our-projects ul li {
+  border: 2px solid #d4d4d4;
+  display: inline-block;
+  padding: 10px;
+  color: #a7a7a7;
+  border-radius: 5px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.our-projects ul li.selected {
+  border: 2px solid rgb(73, 201, 176);
+  background-color: rgb(73, 201, 176);
+  color: #fff;
+}
+
+.our-projects .gallery {
+  padding-top: 40px;
+  overflow: hidden;
+}
+.our-projects .gallery .row > div:nth-child(2) {
+  margin-right: 1%;
+  margin-left: 1%;
+}
+.our-projects .gallery .row > div {
+  float: left;
+  width: 32.66%;
+  margin-bottom: 10px;
+  position: relative;
+}
+.our-projects .gallery .row > div img {
+  width: 100%;
+  height: 100%;
+}
+
+.our-projects .gallery .row > div .over {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 98%;
+  line-height: 183px;
+  background-color: rgba(73, 201, 176, 0.8);
+  color: #fff;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  transition: all 1.5s ease-in-out;
+  display: none;
+}
+
+.our-projects .gallery .row > div .heart {
+  color: #fff;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  display: none;
+}
+.our-projects .gallery .row > div:hover .heart,
+.our-projects .gallery .row > div:hover .over {
+  display: block;
+}
+
+/* end our projects */
+/* end our projects */
+.footer {
+  background-color: #232323;
+  color: #6c6c6c;
+
+  padding: 40px 0;
+}
+.footer .col {
+  float: left;
+  width: 25%;
+}
+
+.footer .col h2 {
+  color: rgb(225, 225, 225);
+  font-weight: normal;
+  font-size: 18px;
+}
+.footer .col p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+/* .footer .col {
+  padding: 1%;
+} */
+.footer .col .social i {
+  display: inline-block;
+  border: 1px solid #6c6c6c;
+  padding: 10px;
+  text-align: center;
+  width: 40px;
+  margin: 0 4px;
+  color: rgb(200, 200, 200);
+}
+.footer .copyright {
+  margin-top: 30px;
+}
+.footer .tags span {
+  display: inline-block;
+  border: 1px solid #6c6c6c;
+  padding: 10px;
+  text-align: center;
+  margin: 0px 5px 10px 0;
+  color: rgb(200, 200, 200);
+  font-weight: normal;
+}
+.footer .recent div {
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.footer .recent div img {
+  float: left;
+  margin-right: 10px;
+}
+.footer .recent div h4 {
+  margin: 10px 0 10px 0;
+  color: rgb(200, 200, 200);
+  font-weight: normal;
+}
+
+.footer .col ul li {
+  margin: 10px 0 15px 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgb(76, 76, 76);
+  color: rgb(200, 200, 200);
+}
