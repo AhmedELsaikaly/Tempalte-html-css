@@ -1,3 +1,3 @@
 # Tempalte-html-css
-HTML,CSS,JQUERY not responsive template 
+HTML,CSS,JQUERY responsive template 
 http://landpagesaikaly.surge.sh/
